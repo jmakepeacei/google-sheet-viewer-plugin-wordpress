@@ -1,0 +1,675 @@
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.carousel-thumbnail {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  margin: 0 5px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.carousel-thumbnail.active {
+  border: 2px solid #007bff;
+}
+
+.carousel-indicators li {
+  list-style: circle;
+  padding: 5px;
+}
+
+.carousel-indicators li.active {
+  list-style: disc;
+}
+
+.portfolio-modal .modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.portfolio-modal .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.gallery-item {
+  z-index: 300;
+}
+
+.wp-block-group {
+  margin: 0 auto !important;
+}
+
+@media (max-width: 767px) {
+  .portfolio-gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 30px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .portafolio {
+    width: 100%;
+    height: 400px;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+  }
+
+  .portfolio-item {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    margin: 30px;
+    /*background-color: #000000;*/
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    perspective: 1000px;
+  }
+
+  .portfolio-item img {
+    width: 24px;
+    height: auto; /* Mantener la proporción de aspecto */
+  }
+
+  .gwlogo {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    z-index: 150;
+  }
+
+  .portfolio-item:hover {
+    transition: all 0.5s ease-out;
+    transition-delay: 0.05s;
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 460px;
+    cursor: pointer;
+  }
+
+  .media-content {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .portfolio-gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    max-width: 1280px !important;
+    margin: 0 auto;
+  }
+
+  .portafolio {
+    width: 100%;
+    max-width: 300px;
+    height: 400px;
+    border-radius: 15px 15px 0px 0px;
+    overflow: hidden;
+  }
+
+  .portfolio-item {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    cursor: pointer;
+    padding: 0px;
+    /*background-color: #000000;*/
+    border-radius: 15px;
+    transition: all 0.5s ease;
+    perspective: 1000px;
+  }
+
+  .portfolio-item img {
+    width: 24px;
+    height: auto; /* Mantener la proporción de aspecto */
+  }
+
+  .gwlogo {
+    display: flex;
+    width: 100%;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 30px;
+    z-index: 150;
+  }
+
+  .portfolio-item:hover {
+    transition: all 0.5s ease-out;
+    transition-delay: 0.05s;
+    background-color: #f4f4f4;
+    width: 300px;
+    height: 460px;
+    cursor: pointer;
+  }
+
+  .media-content {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+
+.dtitle {
+  position: absolute;
+  display: block;
+  top: 255px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  z-index: 80;
+}
+
+.wp-block-navigation .wp-block-navigation-item__label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.contenido {
+  position: absolute;
+  display: block;
+  top: 280px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 350;
+  color: #ffffff;
+  z-index: 90;
+}
+
+.portfolio-item.enlaces {
+  position: relative;
+  display: block;
+  z-index: 300;
+}
+
+.liconos {
+  transition: all 0.5s ease;
+  position: relative;
+  top: -60px;
+  /* background-color: #000000; */
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 100;
+}
+
+.portfolio-item:hover .liconos {
+  transition: all 0.5s ease-out;
+  transition-delay: 0.05s;
+  background-color: #ffffff;
+}
+
+.portfolio-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 0.6em;
+}
+
+.item-content {
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  visibility: hidden;
+}
+
+.item-link {
+  background-color: rgb(71, 71, 71);
+  border: 2px solid rgb(255, 255, 255);
+  transition: all 0.5s ease;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-radius: 8px;
+  padding: 14px 9px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.item-link:hover {
+  transition: all 0.5s ease;
+  transition-delay: 0.05s;
+  border: 2px solid rgb(71, 71, 71);
+  font-weight: 600;
+  color: white;
+  background-color: rgb(71, 71, 71);
+}
+
+.iconos {
+  position: relative;
+}
+
+.enlaces {
+  margin-top: 10px;
+  padding: 30px;
+  z-index: 1000;
+}
+
+.btnDetalles {
+  position: relative;
+  overflow: hidden;
+  background: rgb(168, 247, 163);
+  background: linear-gradient(230deg, rgb(41, 41, 41) 0%, #909090 100%);
+  border: 2px solid rgb(235, 235, 235);
+  transition: all 0.5s ease;
+  color: white;
+  border-radius: 10px;
+  padding: 12px 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 450;
+}
+
+.btnDetalles:hover {
+  transition: all 0.5s ease;
+  transition-delay: 0.05s;
+  border: 2px solid rgb(255, 255, 255);
+  font-weight: 600;
+  color: white;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+}
+
+.ctitulo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0px;
+  width: 100%;
+  color: aliceblue;
+  opacity: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: center;
+  z-index: 90;
+}
+
+.portfolio-item .table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* .portfolio-item .ctitle {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transition-delay: 0.15s;
+  transition-delay: 0.15s;
+  transform: scale(1);
+  top: 0px;
+  opacity: 0;
+} */
+
+.portfolio-item:hover .ctitulo {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -webkit-transform: scale(1);
+  transform: scale(1.5);
+  top: 70px;
+  opacity: 1;
+  text-align: center;
+}
+
+.media-content::after {
+  content: "";
+  position: absolute;
+  z-index: 50;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 10%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+
+.media-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-item .media-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    230deg,
+    rgb(127, 247, 76) 0%,
+    rgb(66, 170, 50) 70%,
+    #009b5a 100%
+  );
+  transition: all 0.5s ease;
+  opacity: 1;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.portfolio-item:hover .media-content::before {
+  opacity: 1;
+}
+
+.portfolio-item:hover .media-content::after {
+  opacity: 0;
+}
+
+.portfolio-item:hover .dtitle {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+  opacity: 0;
+}
+
+.portfolio-item:hover .contenido {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  top: 250px;
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.portfolio-item .media-content .image {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -webkit-transform: scale(1);
+  transform: scale(1.1);
+  /*opacity: 0.5;*/
+  /* transform: rotateY(180deg); */
+  border-radius: 15px;
+}
+
+.portfolio-item .media-content img {
+  margin: 0 auto;
+}
+
+/* .portfolio-item .media-content {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.portfolio-item:hover .media-content {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+  border-radius: 10px;  
+  background: linear-gradient(
+    230deg,
+    rgb(127, 247, 76) 0%,
+    rgb(66, 170, 50) 80%,
+    #009b5a 100%
+  );
+  opacity: 1;
+} */
+
+/* .portfolio-item:hover .item-content {
+  visibility: visible;
+} */
+
+.portfolio-item:hover .media-content .image {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0.1;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.portfolio-item .enlaces {
+  top: 0px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  opacity: 0;
+
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+}
+
+.portfolio-item:hover .enlaces {
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  top: 120px;
+  opacity: 1;
+
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.portfolio-item .btnDetalles {
+  top: -27px;
+  left: -120px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+
+  opacity: 0;
+
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.portfolio-item:hover .btnDetalles {
+  top: -27x;
+  left: 0px;
+
+  opacity: 1;
+
+  position: relative;
+
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  transform: translateX(0);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgb(1, 132, 34);
+  }
+  50% {
+    transform: scale(4.05);
+    box-shadow: 0 0 0 10px rgba(79, 243, 4, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(79, 243, 4, 0);
+  }
+}
+
+#blob {
+  background: rgb(77, 248, 85);
+  box-shadow: 0 0 0 0 rgb(4, 141, 59);
+  border-radius: 50%;
+  margin: 5px;
+  height: 5px;
+  width: 5px;
+
+  transform: scale(1);
+  animation: pulse 3s infinite;
+}
+
+.blob-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  z-index: 1000;
+}
+
+.tabs-container {
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  max-width: 1280px !important;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.tab {
+  position: relative;
+  transition: all 0.5s ease;
+  padding: 10px;
+  color: #7e7e7e;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #5da801;
+  transition: all 0.3s ease-out;
+  transform: translateX(-50%);
+}
+
+.tab:hover {
+  line-height: 15px;
+  text-decoration: underline;
+  color: #5da801;
+}
+
+.tab:hover::after {
+  width: 100%;
+}
+
+.tab.activa {
+  line-height: 15px;
+  text-decoration: underline;
+  color: #5da801;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.pagination a,
+.pagination span {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 2px;
+  border: 1px solid #ddd;
+  color: #017329;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.pagination a:hover,
+.pagination .current {
+  background-color: #5da801;
+  color: #fff;
+  border-color: #5da801;
+  border-radius: 6px;
+}
+
+.loading {
+  position: relative;
+}
+
+.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background: url("loader.gif") no-repeat center center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+}

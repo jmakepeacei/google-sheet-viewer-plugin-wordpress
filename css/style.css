@@ -1,0 +1,157 @@
+.google-sheets-data-container {
+    margin: 20px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.google-sheets-data {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.google-sheets-data th,
+.google-sheets-data td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.google-sheets-data th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-top: none;
+}
+
+.google-sheets-data tr:last-child td {
+    border-bottom: none;
+}
+
+.google-sheets-data tbody tr:hover {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+}
+
+.header-content
+{
+    text-transform: capitalize !important;
+}
+
+.google-sheets-data .header-cell,
+.google-sheets-data .data-cell {
+    position: relative;
+}
+
+.google-sheets-data .header-content,
+.google-sheets-data .cell-content {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 200px; /* Ajusta según tus necesidades */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    .google-sheets-data {
+        border: none;
+        box-shadow: none;
+    }
+
+    .google-sheets-data thead {
+        display: none;
+    }
+
+    .google-sheets-data,
+    .google-sheets-data tbody,
+    .google-sheets-data tr,
+    .google-sheets-data td {
+        display: block;
+        width: 100%;
+    }
+
+    .google-sheets-data tr {
+        margin-bottom: 15px;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .google-sheets-data td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .google-sheets-data td:last-child {
+        border-bottom: none;
+    }
+
+    .google-sheets-data td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .google-sheets-data .cell-content {
+        max-width: none;
+        white-space: normal;
+    }
+}
+
+.google-sheets-error {
+    background-color: #ffebee;
+    border: 1px solid #ffcdd2;
+    color: #b71c1c;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.google-sheets-error h3 {
+    margin-top: 0;
+    color: #c62828;
+}
+
+.google-sheets-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 1.4;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    box-shadow: 0 0 0 transparent;
+    transition: border-color .1s ease-in-out;
+}
+
+.google-sheets-input:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+    outline: 2px solid transparent;
+}
+
+/* Regla de medios para pantallas más pequeñas */
+@media screen and (max-width: 782px) {
+    .google-sheets-input {
+        max-width: 100%;
+    }
+}
