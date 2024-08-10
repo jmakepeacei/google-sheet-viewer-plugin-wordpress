@@ -9,7 +9,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Este plugin utiliza una hoja de cálculo de Google Sheets y la visualiza a través de un ShortCode.
+Este plugin muestra los datos de una hoja de cálculo de Google Sheets y la visualiza a través de un ShortCode en Wordpress.
 
 == Installation ==
 
